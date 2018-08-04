@@ -33,8 +33,8 @@ const styles = StyleSheet.create({
   }
 });
 
-const defaultZoom: [number] = [6];
-const defaultCenter = [-0.2416815, 51.5285582];
+const defaultZoom: [number] = [4];
+const defaultCenter = [-89.9345, 40.7128];
 
 class Main extends React.Component<Props & RouteComponentProps<RouteProps, void>, StateComp> {
   public state = {
