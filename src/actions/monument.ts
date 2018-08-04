@@ -27,6 +27,8 @@ const buildMonumentsUrl = () => (
   `${api()}?select=${selectedFields.join(',')}` //tslint:disable-line
 );
 
+//ACTION CREATORS
+
 const setMonuments = (data: any) => ({
   type: SET_MONUMENTS,
   payload: data
@@ -37,6 +39,8 @@ const setPhotos = (data: any, id: string) => ({
   payload: data,
   id
 });
+
+//THUNKS
 
 export const getMonuments = () => (dispatch: any) => (
   fetch(req(buildMonumentsUrl()))
