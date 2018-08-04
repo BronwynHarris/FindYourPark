@@ -4,7 +4,7 @@ import { throttle } from 'lodash';
 import { connect } from 'react-redux';
 import { getMonuments } from '../actions/monument';
 import { MonumentDict, State } from '../reducers/index';
-import UnescoMap from './map';
+import NationalParkMap from './map';
 import { css, StyleSheet } from 'aphrodite/no-important';
 import { browserHistory, RouteComponentProps } from 'react-router';
 import { Props as SidepanListProps } from './sidepanList';
@@ -147,7 +147,7 @@ class Main extends React.Component<Props & RouteComponentProps<RouteProps, void>
           })
         }
         </SidepanContainer>
-        <UnescoMap
+        <NationalParkMap
           zoom={zoom}
           center={center}
           hoveredItem={hoveredItem}

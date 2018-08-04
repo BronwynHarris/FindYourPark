@@ -1,4 +1,4 @@
-[{"category":"Natural",
+{"data":[{"category":"Natural",
     "created_at":42,
     "criteria_txt":"(vii)(viii)(ix)(x)",
     "danger":null,
@@ -24,3 +24,4 @@
     "transboundary":1,
     "unique_number":407,
     "updated_at":42}]
+}

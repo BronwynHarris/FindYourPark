@@ -6,11 +6,12 @@ import { MapEvent } from 'react-mapbox-gl/lib/map-events';
 import MonumentLayer from './monumentLayer';
 import { MonumentLayout } from './monumentLayer';
 
+
 const Map = ReactMapboxGl({
-  accessToken: 'pk.eyJ1IjoibG91aXNjdXJyaWUiLCJhIjoiY3MwR3B3QSJ9._5UXyjEIY0YisuAz9c_tJA'
+  accessToken: 'pk.eyJ1IjoiYnJvbnd5bmgiLCJhIjoiY2ppbjliM3RoMDF2cTNwbHhhYWpxaDA4aSJ9.Ck-5IjFlQeo_sEhv1g70vA'
 });
 
-const mapStyle = 'mapbox://styles/louiscurrie/cizcq06l600292so15ydwjckr';
+const mapStyle = 'mapbox://styles/bronwynh/cjkfy25eb18d62rnkpxbow3y6';
 
 const styles = {
   map: {
@@ -42,7 +43,7 @@ const natureLayout: MonumentLayout = {
   'icon-image': 'nature'
 };
 
-class UnescoMap extends React.Component<Props> {
+class NationalParkMap extends React.Component<Props> {
   private markerHover = (key: string, { map }: any) => {
       map.getCanvas().style.cursor = 'pointer';
       this.props.onMouseEnter(key);
@@ -57,7 +58,7 @@ class UnescoMap extends React.Component<Props> {
     const { monuments, BoundsChanged, mapInit, center, zoom, hoveredItem, onMonumentClick } = this.props;
 
     const cultural = Object.keys(monuments).filter(k => monuments[k].category !== 'Natural');
-    const natural = Object.keys(monuments).filter(k => monuments[k]. category === 'Natural');
+    const natural = Object.keys(monuments).filter(k => monuments[k].category === 'Cultural');
 
     return (
       <Map
@@ -94,4 +95,4 @@ class UnescoMap extends React.Component<Props> {
   }
 };
 
-export default UnescoMap;
+export default NationalParkMap;
