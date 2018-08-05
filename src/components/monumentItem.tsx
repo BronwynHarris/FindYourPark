@@ -64,7 +64,7 @@ const MonumentItem: React.StatelessComponent<Props> = ({ monument, onMouseEnter,
       </div>
     </div>
     <div className={css(styles.image)}>
-      <img src={monument.image_url}/>
+      <img src={monument.image_url} width="80" height="80"/>
     </div>
   </div>
 );
