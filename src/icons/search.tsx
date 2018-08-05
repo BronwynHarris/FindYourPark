@@ -5,7 +5,7 @@ export interface Props {
   className?: string;
 }
 
-const Search: React.StatelessComponent<Props> = ({ color = '#A9AEBF', className }) => (
+const Search: React.StatelessComponent<Props> = ({ color = '#d0efeb', className }) => (
   <svg width="13" height="14" viewBox="0 0 13 14" className={className}>
     <g transform="translate(1 1)" stroke={color} fill="none" fillRule="evenodd">
       <ellipse cx="4.8" cy="4.952" rx="4.8" ry="4.952"/>

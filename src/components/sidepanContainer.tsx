@@ -4,7 +4,7 @@ import { StyleSheet, css } from 'aphrodite/no-important';
 const styles = StyleSheet.create({
   sidepan: {
     zIndex: 10,
-    backgroundColor: 'white',
+    backgroundColor: "#d0efeb",
     top: 0,
     borderRight: '1px solid rgb(80%, 80%, 80%)'
   }

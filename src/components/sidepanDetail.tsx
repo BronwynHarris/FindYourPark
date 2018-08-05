@@ -3,18 +3,14 @@ import { connect } from 'react-redux';
 import { browserHistory } from 'react-router';
 import { Monument, State as StateRoot } from '../reducers/index';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import Slider from './slider';
 import { colors } from '../style';
 import Back from '../icons/back';
-import Fullscreen from './fullscreen';
-const placeholder = require('../placeholder.png'); // tslint:disable-line
 
 export interface Props {
   monument: Monument;
 }
 
 interface State {
-  isFullscreen: boolean;
 }
 
 export interface RouteProps {
@@ -81,51 +77,28 @@ const styles = StyleSheet.create({
 class SidepanDetail extends React.Component<Props, State> {
 
   public state = {
-    isFullscreen: false
   };
 
   private onGoBack = () => {
     browserHistory.push('/');
   }
 
-  private onFullScreen = () => {
-    this.setState({
-      isFullscreen: true
-    });
-  }
-
-  private onDismissFullscreen = () => {
-    this.setState({
-      isFullscreen: false
-    });
-  }
-
   public render() {
     const { monument } = this.props;
-    const { isFullscreen } = this.state;
 
     if (!monument) {
       return null;
     }
 
-    const hasPictures = monument.pictures && monument.pictures.length > 0;
-
     return (
       <div className={css(styles.container)}>
-        {
-          isFullscreen && <Fullscreen pictures={monument.pictures} onDismissFullscreen={this.onDismissFullscreen}/>
-        }
         <div className={css(styles.footer)}>
           <div className={css(styles.allSites)} onClick={this.onGoBack}>
             <Back className={css(styles.back)}/>
           </div>
         </div>
         <div>
-          {
-            hasPictures ?
-              <Slider pictures={monument.pictures} onFullScreen={this.onFullScreen}/> :
-              <img src={`/${placeholder}`}/>
-          }
+
         </div>
         <div className={css(styles.monumentDetails)}>
           <h1 className={css(styles.title)}>{monument.site}</h1>
@@ -133,6 +106,9 @@ class SidepanDetail extends React.Component<Props, State> {
           <div className={css(styles.description)}>
             { monument.short_description }
           </div>
+        </div>
+        <div ref='map'>
+          MAP GOES HERE
         </div>
       </div>
     );

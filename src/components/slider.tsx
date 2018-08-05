@@ -1,14 +1,10 @@
 import * as React from 'react';
-import * as SlickSlider from 'react-slick';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import { Picture } from '../reducers/index';
 import Right from '../icons/right';
 import Left from '../icons/left';
 import { colors } from '../style';
 
 export interface Props {
-  pictures: Picture[];
-  onFullScreen?: React.ReactEventHandler<HTMLImageElement>;
 }
 
 export interface State {}
@@ -36,7 +32,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    backgroundColor: '#d0efeb',
     borderRadius: 5,
     cursor: 'pointer',
     margin: 5,
@@ -49,15 +45,6 @@ const styles = StyleSheet.create({
   }
 });
 
-const settings = {
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false
-};
-
-const SliderComponent = (SlickSlider as any).default;
 
 class Slider extends React.Component<Props, State> {
   private slider: any;
@@ -71,19 +58,8 @@ class Slider extends React.Component<Props, State> {
   }
 
   public render() {
-    const { pictures, onFullScreen } = this.props;
-
     return (
       <div className={css(styles.container)}>
-        <SliderComponent {...settings} className={css(styles.slider)} ref={(c: any) => this.slider = c }>
-          {
-            pictures.map((picture, index) => (
-              <div className={css(styles.image)} key={index}>
-                <img src={picture.url} style={{ margin: 'auto', maxHeight: 300 }} onClick={onFullScreen}/>
-              </div>
-            ))
-          }
-        </SliderComponent>
         <div className={css(styles.controls)}>
           <div className={css(styles.icon)} onClick={this.onPrev}>
             <Left size={20}/>

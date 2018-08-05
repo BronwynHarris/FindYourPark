@@ -1,11 +1,8 @@
 import * as React from 'react';
-import { Picture } from '../reducers/index';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import * as SlickSlider from 'react-slick';
 import { Cross } from '../icons/cross';
 
 export interface Props {
-  pictures?: Picture[];
   onDismissFullscreen: React.MouseEventHandler<HTMLElement>;
 }
 
@@ -44,33 +41,14 @@ const styles = StyleSheet.create({
   }
 });
 
-const settings = {
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1
-};
-
 export default class Fullscreen extends React.Component<Props> {
-  public render() {
-    const { pictures, onDismissFullscreen } = this.props;
+  render() {
+    const { onDismissFullscreen } = this.props;
 
     return (
       <div className={css(styles.container)}>
         <div className={css(styles.crossContainer)}><Cross onClick={onDismissFullscreen}/></div>
-        {
-          pictures && (
-            <SlickSlider {...settings} className={css(styles.slider)}>
-              {
-                pictures.map((picture, index) => (
-                  <div className={css(styles.imageContainer)} key={index}>
-                    <img src={picture.url}/>
-                  </div>
-                ))
-              }
-            </SlickSlider>
-          )
-        }
+
       </div>
     );
   }

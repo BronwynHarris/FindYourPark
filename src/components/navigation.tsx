@@ -1,12 +1,11 @@
 import * as React from 'react';
 import { css, StyleSheet } from 'aphrodite/no-important';
-import Logo from '../icons/logo';
 import Search from './search';
 import { colors } from '../style';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
+    backgroundColor: '#d0efeb',
     display: 'flex',
     borderBottom: '1px solid #edeaea',
     height: '6vh'
@@ -55,7 +54,7 @@ class Navigation extends React.Component<Props, State> {
     return (
       <div className={css(styles.container)}>
         <div className={css(styles.icon)}>
-          <Logo/>
+          <img />
         </div>
         <Search onChange={onSearch}/>
         <div className={css(styles.selectContainer)}>

@@ -1,5 +1,9 @@
 /* Reset */
 
+* {
+  color: "#d0efeb"
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -33,6 +37,7 @@ time, mark, audio, video {
 input {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  color: #d0efeb
 }
 
 article, aside, details, figcaption, figure,
@@ -74,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 18px;
-  color: #394c5b;
+  color: #171a1b;
   font-weight: bold;
   line-height: 24px;
 }
@@ -93,7 +98,19 @@ h3 {
   font-weight: 500;
 }
 
+.input {
+  background-color: #d0efeb
+}
+
+#map {
+  height: 100%;
+}
+
 textarea, input { outline: none; }
+
+colors {
+  color: #d0efeb
+}
 
 footer {
   position: absolute;
@@ -101,7 +118,7 @@ footer {
   height: 40px;
   left: 0;
   right: 0;
-  background-color: #fafafc;
+  background-color: #357237;
 }
 
 .mapboxgl-popup-content {

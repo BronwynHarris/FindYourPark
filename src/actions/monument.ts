@@ -1,6 +1,6 @@
 import { SET_MONUMENTS, SET_PHOTOS } from '../constants/monument';
 
-const api = (endpoint = 'stuff') => `https://api.myjson.com/bins/zppio`;
+const api = (monuments = 'monuments') => `https://unesco-api.balek.io/api/monuments`;
 
 const req = (url: string, method = 'GET', body?: any) => new Request(url, {
   method,
