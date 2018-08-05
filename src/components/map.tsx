@@ -11,7 +11,7 @@ const Map = ReactMapboxGl({
   accessToken: 'pk.eyJ1IjoiYnJvbnd5bmgiLCJhIjoiY2ppbjliM3RoMDF2cTNwbHhhYWpxaDA4aSJ9.Ck-5IjFlQeo_sEhv1g70vA'
 });
 
-const mapStyle = 'mapbox://styles/bronwynh/cjkfy25eb18d62rnkpxbow3y6';
+const mapStyle = 'mapbox://styles/bronwynh/cjkg4hlt11ef22rpm3ehf3yfn';
 
 const styles = {
   map: {
