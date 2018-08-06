@@ -423,7 +423,7 @@
     "justification":"<p><em>Criterion (x):</em> Peninsula Vald&eacute;s contains very important and significant natural habitats for the in-situ conservation of several threatened species of outstanding universal value, and specifically its globally important concentration of breeding southern right whales, which is an endangered species. It is also important because of the breeding populations of southern elephant seals and southern sea lions. The area exhibits an exceptional example of adaptation of hunting techniques by the orca to the local coastal conditions.</p>",
     "latitude":-42.5,
     "location":null,
-    "long_description":"Pen&iacute;nsula Vald&eacute;s in the Argentinean province of Chubut is a 4,000&nbsp;km2 promontory, protruding 100&nbsp;km eastwards into the South Atlantic. The 400&nbsp;km shoreline includes a series of gulfs, rocky cliffs, shallow bays and lagoons with extensive mudflats, sandy and pebble beaches, coastal sand dunes and small islands.\r\nThe shores and waters around the Peninsula is a special place for marine mammals. A population of southern right whales uses the protected waters of for mating and calving. The southern elephant seal has its most northern colony here. It reaches peak numbers of over 1,000 individuals and is the only colony in the world reported to be on the increase.\r\nThe southern sea lion also breeds here in large numbers.\r\nThe local population of orcas has used the beaches of Vald&eacute;sto to develop a unique and spectacular approach to hunting. The orcas race into the shallow surf to snatch sea lions or young elephant seals, often throwing themselves onto the beach in the process.\r\nThe site has a high diversity of birds. The peninsula's intertidal mudflats and coastal lagoons are important staging sites for migratory shorebirds The Magellanic penguin is the most numerous with almost 40,000 active nests distributed among five different colonies.\r\nTerrestrial mammals are also abundant. Large herds of guanaco can be seen throughout the peninsula and the mara, an Argentinean endemic, which is endangered in other parts of the country, is found here.",
+    "long_description":"Peninsula Valdes in the Argentinean province of Chubut is a 4,000&nbsp;km2 promontory, protruding 100&nbsp;km eastwards into the South Atlantic. The 400&nbsp;km shoreline includes a series of gulfs, rocky cliffs, shallow bays and lagoons with extensive mudflats, sandy and pebble beaches, coastal sand dunes and small islands.\r\nThe shores and waters around the Peninsula is a special place for marine mammals. A population of southern right whales uses the protected waters of for mating and calving. The southern elephant seal has its most northern colony here. It reaches peak numbers of over 1,000 individuals and is the only colony in the world reported to be on the increase.\r\nThe southern sea lion also breeds here in large numbers.\r\nThe local population of orcas has used the beaches of Vald&eacute;sto to develop a unique and spectacular approach to hunting. The orcas race into the shallow surf to snatch sea lions or young elephant seals, often throwing themselves onto the beach in the process.\r\nThe site has a high diversity of birds. The peninsula's intertidal mudflats and coastal lagoons are important staging sites for migratory shorebirds The Magellanic penguin is the most numerous with almost 40,000 active nests distributed among five different colonies.\r\nTerrestrial mammals are also abundant. Large herds of guanaco can be seen throughout the peninsula and the mara, an Argentinean endemic, which is endangered in other parts of the country, is found here.",
     "longitude":-64.0,
     "region":"Latin America and the Caribbean",
     "revision":0,
@@ -456,7 +456,7 @@
     "region":"Europe and North America",
     "revision":0,
     "secondary_dates":"1999",
-    "short_description":"Inhabited since prehistoric times, Butrint has been the site of a Greek colony, a Roman city and a bishopric. Following a period of prosperity under Byzantine administration, then a brief occupation by the Venetians, the city was abandoned in the late Middle Ages after marshes formed in the area. The present archaeological site is a repository of ruins representing each period in the city&rsquo;s development.",
+    "short_description":"Inhabited since prehistoric times, Butrint has been the site of a Greek colony, a Roman city and a bishopric. Following a period of prosperity under Byzantine administration, then a brief occupation by the Venetians, the city was abandoned in the late Middle Ages after marshes formed in the area. The present archaeological site is a repository of ruins representing each period in the city's development.",
     "site":"Butrint",
     "states":"Albania",
     "transboundary":0,
@@ -489,6 +489,7 @@
     "states":"Arizona",
     "transboundary":0,
     "unique_number":1563,
-    "updated_at":42
+    "updated_at":42,
+    "flights":"/Flagstaff.png"
     }
 ]}

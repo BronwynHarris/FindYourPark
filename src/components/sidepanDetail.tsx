@@ -108,7 +108,7 @@ class SidepanDetail extends React.Component<Props, State> {
           </div>
         </div>
         <div ref='flights'>
-          <img src={monument.flights} width="575px" height="320px"/>
+          <img src={monument.flights} width="575px"/>
         </div>
       </div>
     );
