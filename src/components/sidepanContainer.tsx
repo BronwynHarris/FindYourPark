@@ -6,7 +6,8 @@ const styles = StyleSheet.create({
     zIndex: 10,
     backgroundColor: "#d0efeb",
     top: 0,
-    borderRight: '1px solid rgb(80%, 80%, 80%)'
+    borderRight: '1px solid rgb(80%, 80%, 80%)',
+    width: '575px'
   }
 });
 

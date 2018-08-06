@@ -42,6 +42,7 @@ export interface Monument {
   site: string;
   transboundary: number;
   unique_number: number;
+  flights: string;
 }
 
 export interface MonumentDict {

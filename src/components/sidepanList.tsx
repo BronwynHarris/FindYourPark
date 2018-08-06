@@ -35,7 +35,8 @@ export interface State {
 const selectToField = {
   Year: 'date_inscribed',
   Name: 'site',
-  Country: 'location'
+  Country: 'location',
+  NationalPark: 'tags'
 };
 
 const select = Object.keys(selectToField);

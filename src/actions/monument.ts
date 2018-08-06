@@ -1,6 +1,6 @@
 import { SET_MONUMENTS, SET_PHOTOS } from '../constants/monument';
 
-const api = (monuments = 'monuments') => `https://unesco-api.balek.io/api/monuments`;
+const api = (monuments = 'monuments') => `https://api.myjson.com/bins/17jsm0`;
 
 const req = (url: string, method = 'GET', body?: any) => new Request(url, {
   method,
@@ -20,7 +20,8 @@ const selectedFields = [
   'image_url',
   'category',
   'states',
-  'date_inscribed'
+  'date_inscribed',
+  'flights'
 ];
 
 const buildMonumentsUrl = () => (

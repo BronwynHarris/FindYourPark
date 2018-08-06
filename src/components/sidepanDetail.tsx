@@ -107,8 +107,8 @@ class SidepanDetail extends React.Component<Props, State> {
             { monument.short_description }
           </div>
         </div>
-        <div ref='map'>
-          MAP GOES HERE
+        <div ref='flights'>
+          <img src={monument.flights} width="575px" height="343px"/>
         </div>
       </div>
     );

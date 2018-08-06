@@ -82,6 +82,7 @@
     "ramda": "^0.23.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
+    "react-google-maps": "^9.4.5",
     "react-mapbox-gl": "3.8.0",
     "react-motion": "^0.4.7",
     "react-photoswipe": "^1.2.0",
