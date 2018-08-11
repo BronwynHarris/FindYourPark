@@ -15,8 +15,8 @@
     "type": "git",
     "url": "git://github.com/alex3165/react-typescript-starter.git"
   },
-  "author": "Alexandre Rieux",
-  "license": "ISC",
+  "author": "Bronwyn Harris",
+  "license": "",
   "jest": {
     "transform": "<rootDir>/node_modules/ts-jest/preprocessor.js",
     "setupFiles": [
